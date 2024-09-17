@@ -1,0 +1,19 @@
+//HOOKS
+import { useNavigate } from "react-router-dom"
+
+//CSS
+import styles from './BackBtn.module.css'
+
+const BackBtn = () => {
+    const navigate = useNavigate()
+
+    return (
+    <>
+        <button  className={styles.back_btn} onClick={() => navigate(-1)}>
+            Voltar
+        </button>
+    </>
+  )
+}
+
+export default BackBtn
